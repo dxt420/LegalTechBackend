@@ -1,0 +1,8 @@
+
+<form action={% url 'legalTech:addsocial' %} method="post" enctype="multipart/form-data">
+{% csrf_token %}
+Facebook&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ social.val.facebook }}" name="facebook"><br><br>
+Twitter&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ social.val.twitter }}" name="twitter"><br><br>
+Linkedin&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ social.val.linkedin }}" name="linkedin"><br><br>
+<input type="submit" value="change">
+</form>

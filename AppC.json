@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "legaltech",
+  "private_key_id": "ddc87c5d79b9287a33add3dc11c047d693b0315c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFDVThn5ZFBky1\nErZAuYR29GreDT0XiUHkJl/Wi5VkppGwlpdkRugfdVMZSjf3mKNw58XJ7FNmn3vx\n0HuDGkApv2Sut7L2SXb/NuX+8EwmUvV1k97gYsTrVQnTmQz7lWncIWPXmQoiKBEn\nMVvtSfjVGnknC/V0Jn7Mucd8Ns0iEec/aQ9xlGDvGRDQzjjVDdMPZcFeBzy0SD4U\nbVemJxWdMeQUr5fRkFB8dKrnim6Gf4iw1g6Drg7w51teGjphgNjWBnO4FPjFVhmm\noZ5tls7JqnYMVB+/N+vY3ZELzIfTJAkQmoqhFMNYrFLPzFIo148luYb1F0AHSrRL\ngTYRHbFDAgMBAAECggEACT+q8DwRTYQSLZ2HOFp8wSiPq4RrjaM/mHnEnclHZcX7\nqJIo4OgDFRboo5M8NT7QzQfT3Lpe3740jxD9+xVMValKDHlKyQyBrVDiUqjsqg/S\nvYYHO/jmzTTclTXlyhklMtPOX9wrAZdn1rMWYXjLWRU5AoApMR5tbSZ7GnVoA2VG\njRy8e3UWRmMfyROzr+Ys+Q9EXELttKlYcVnBNFO71lIag8n4GCipzkJAii05z80V\ne+6WAkprtB6QBhKF1a+/l/Y1k/B+58qW0S27iHJSTxWy+pGs/9EjSrvPUvt06mSY\ncU74HRMG8lhnA01lvH4KmM0QOGg2mUTmxEz2UaqgwQKBgQD2M0NU7YSiVdTfLWkJ\ndq/MYFzJHk/xS5i5F/TXACH79WMQvVhKEB0zwbWT6aR2KyAwt5w9EmsuXnBlRoKA\nvX0tbzohIHOY6hcoAeumFQAGMYxa3Tw7fm/c2lWbHzgUana/zoouX+pCCCJykVW8\n4vOWh/1kYgEJ9BklSO2xW0HoeQKBgQDM5UHkcfRNdN0loxrigIA+Aj1zINDDnrHC\nA/HMYF2jThio58eALel2CU5WNQNELDFL55OKIP8h8ScNrNpQGBCLzNktdir1TfjR\nXxbI5JXjcSrq5CLpycIj+kc08VeJ5GPP7I6+dNZHm9P/5OEGTTuZgM0HJ4Yl+O+k\nNzJtMElwmwKBgDI763UcsX9d+/09irz/locg8k2m/bDCN/ssRCzKPiTmwLvdpnIW\nL58r2xy/A2uJCRxnml1rsKrZYh2H8YDLKQtoMngn4u5EdU0Ydzh/+G1LFtRDZ9LL\nzY9GjUkFaa/guTIRtmgX8fhfKIgv10qfFAyW2sDsrkGVqLvO0ZDqidwhAoGAIC1Q\nr8OFjjRwFl0K988eVJ6db9sTbeUaHVHpQyNPETpOfRgJKIQNSdAkUT16Cda21yjC\n7spHxtjMPUWL81AUKSA+avlHvcZE8Pxx45KiR1maV9ED+psItgWz8QiFqs4HLrwD\nnr1SeWRrYqBbBlZSqcSkbh8y3fu+Bpf0f1k570kCgYEA4AXu7uFsJ52/1f7hj2m9\nCmtLWWcIbwP2KBFqkpwsY8JqnXLlTmvCRkcX1f4Xql1OcrRSM0kEBm56epXIza5R\ng9nRXNg0JzqMGpgsy9Ga0ziiKJk98cI5uag9q0v9EpEl9y42KLv/yLVUDe5xcoBh\nKuVfbfy+XqYfKuUvYxUrBr0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "alt-854@legaltech.iam.gserviceaccount.com",
+  "client_id": "112609454670574052087",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alt-854%40legaltech.iam.gserviceaccount.com"
+}

@@ -1,0 +1,219 @@
+{% load static %}
+{% csrf_token %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" media="all" href={% static 'legalTech/style.scss' %} />
+
+
+<div class="table-users">
+
+   <h2>Gold Sponsors</h2>
+   <table cellspacing="0">
+      <tr>
+        <th >Icon</th>
+        <th >Name</th>
+        
+        <th>Description</th>
+        <th>Company</th>
+        <th >Website</th>
+        <th >Email</th>
+        <th >Phone</th>
+      </tr>
+
+    
+
+{% for item in goldsponsors.each %}
+<tr> 
+    <td><img width=100 src="{{ item.val.imageurl }}" /> </td>
+        <td>{{ item.val.name}}</td>
+        
+        <td>{{ item.val.description }}</td>
+        <td>{{ item.val.info }}</td>
+        <td>{{ item.val.website }}</td>
+        <td>{{ item.val.email }}</td>
+        <td>{{ item.val.phone }}</td>
+    </tr>
+         {% endfor %}
+   </table>
+</div>
+
+
+
+
+<div class="table-users">
+
+
+<form action={% url 'legalTech:addsponsor1' %} method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h2>Add Gold Sponsor</h2>
+    Name    &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br><br>
+    Company&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="info"><br><br>
+    Descr.&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"><br><br>
+    website&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="website"><br><br>
+    Email&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email"><br><br>
+    Phone&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone"><br><br>
+
+    
+    <input type="file" name="pic" id="pic" accept="image/*"><br><br>
+    
+    <input type="submit" value="add">
+
+    
+
+
+</form>
+
+</div>
+
+
+
+<div class="table-users">
+
+   <h2>Platinum Sponsors</h2>
+   <table cellspacing="0">
+      <tr>
+        <th >Icon</th>
+        <th >Name</th>
+        
+        <th>Description</th>
+        <th>Company</th>
+        <th >Website</th>
+        <th >Email</th>
+        <th >Phone</th>
+      </tr>
+
+    
+
+{% for item in platinumsponsors.each %}
+<tr> 
+    <td><img width=100 src="{{ item.val.imageurl }}" /> </td>
+        <td>{{ item.val.name}}</td>
+        
+        <td>{{ item.val.description }}</td>
+        <td>{{ item.val.info }}</td>
+        <td>{{ item.val.website }}</td>
+        <td>{{ item.val.email }}</td>
+        <td>{{ item.val.phone }}</td>
+    </tr>
+         {% endfor %}
+   </table>
+</div>
+
+
+
+<div class="table-users">
+<form action={% url 'legalTech:addsponsor2' %} method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h2>Add Platinum Sponsor</h2>
+   
+    Name    &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br><br>
+    Company&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="info"><br><br>
+    Descr.&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"><br><br>
+    website&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="website"><br><br>
+    Email&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email"><br><br>
+    Phone&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone"><br><br>
+
+    
+    <input type="file" name="pic" id="pic" accept="image/*"><br><br>
+    
+    <input type="submit" value="add">
+    
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-users">
+
+   <h2>Silver Sponsors</h2>
+   <table cellspacing="0">
+      <tr>
+        <th >Icon</th>
+        <th >Name</th>
+        
+        <th>Description</th>
+        <th>Info</th>
+        <th >Website</th>
+        <th >Email</th>
+        <th >Phone</th>
+      </tr>
+
+    
+
+{% for item in silversponsors.each %}
+<tr> 
+    <td><img width=100 src="{{ item.val.imageurl }}" /> </td>
+        <td>{{ item.val.name}}</td>
+        
+        <td>{{ item.val.description }}</td>
+        <td>{{ item.val.info }}</td>
+        <td>{{ item.val.website }}</td>
+        <td>{{ item.val.email }}</td>
+        <td>{{ item.val.phone }}</td>
+    </tr>
+         {% endfor %}
+   </table>
+</div>
+
+
+<div class="table-users">
+<form action={% url 'legalTech:addsponsor3' %} method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h2>Add Silver Sponsor</h2>
+
+    Name    &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br><br>
+    Company&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="info"><br><br>
+    Descr.&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description"><br><br>
+    website&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="website"><br><br>
+    Email&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email"><br><br>
+    Phone&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone"><br><br>
+
+    
+    <input type="file" name="pic" id="pic" accept="image/*"><br><br>
+    
+    <input type="submit" value="add">
+
+    
+
+
+</form>
+
+</div>
+
+<script type="text/javascript">    
+    function readURL(input) {
+
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('#blah').attr('src', e.target.result);
+      $('#blah2').attr('value', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#imgInp").change(function() {
+  readURL(this);
+});
+</script>

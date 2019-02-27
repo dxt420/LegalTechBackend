@@ -1,0 +1,64 @@
+{% if msg %}
+<script>
+    alert('{{msg}}')
+</script>
+{% endif %}
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+
+Welcome {{e}}
+
+<br>
+<a href={% url 'legalTech:sponsors'  %}>Sponsors</a><br>
+<a href={% url 'legalTech:exhibitor'  %}>exhibitors</a><br>
+<a href={% url 'legalTech:attendee'  %}>attendees</a><br>
+<a href={% url 'legalTech:speaker'  %}>speakers</a><br>
+<a href={% url 'legalTech:schedule'  %}>schedule</a><br>
+<a href={% url 'legalTech:about'  %}>about</a><br>
+<a href={% url 'legalTech:social'  %}>social</a><br>
+<a href={% url 'legalTech:wifi'  %}>wifi</a><br>
+<a href={% url 'legalTech:map'  %}>map</a><br>
+{% comment %} <a href={% url 'legalTech:sponsors'  %}>Sponsors</a><br> {% endcomment %}
+
+<br>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+<script>
+    var config = {
+    apiKey: "AIzaSyDFNW8MN6rPrdwJnxV1S_RLPX2dgg4gVNg",
+    authDomain: "legaltech-7887b.firebaseapp.com",
+    databaseURL: "https://legaltech-7887b.firebaseio.com",
+    storageBucket: "legaltech-7887b.appspot.com",
+    messagingSenderId: "470663134509",
+    projectId: "legaltech-7887b"
+
+
+  };
+  firebase.initializeApp(config);
+  // Get a reference to the storage service, which is used to create references in your storage bucket
+  function uploadimage(){
+  var storage = firebase.storage();
+  var file = document.getElementById("files").files[0];
+  var storageRef = storage.ref();
+  var thisref = storageRef.child(file.name).put(file);
+  thisref.on('state_changed',function(snapshot){
+  console.log("file uplaoded succesfully");
+  },
+  function(error) {
+  },
+  function() {
+        // Upload completed successfully, now we can get the download URL
+        var downloadURL = thisref.snapshot.downloadURL;
+        console.log("got url");
+  document.getElementById("url").value = downloadURL;
+  alert("file uploaded successfully");
+});
+    }
+</script>
+</html>

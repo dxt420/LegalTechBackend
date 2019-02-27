@@ -1,0 +1,37 @@
+{% load static %}
+
+<link rel="stylesheet" media="all" href={% static 'legalTech/style.scss' %} />
+
+
+<div class="table-users">
+
+   <h2>Attendees</h2>
+   <table cellspacing="0">
+      <tr>
+        <th >Icon</th>
+        <th >Name</th>
+        <th >email</th>
+        <th>id</th>
+        
+        
+      </tr>
+
+    
+
+{% for item in attendees.each %}
+<tr> 
+    <td><img width=100 src="{{ item.val.imageurl }}" /> </td>
+        <td>{{ item.val.firstName}}  {{ item.val.lastName}}</td>
+        
+        <td>{{ item.val.email }}</td>
+        <td>{{ item.val.id }}</td>
+       
+    </tr>
+         {% endfor %}
+   </table>
+</div>
+
+
+
+
+

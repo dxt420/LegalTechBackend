@@ -1,0 +1,168 @@
+{
+    "name": "LegalTech Conference'19",
+    "profilePic": "assets/img/event/ban.png",
+    "about": "Sept 16 - 20, 2018",
+    "extra": {
+        "sponsors": {
+            "platinum": [{
+                "name": "Simpler Systems",
+                "info": "Simpler Systems"
+            }],
+            "gold": [{
+                "name": "IBM",
+                "info": "IBM Business"
+            }],
+            "silver": [{
+                    "name": "Wano",
+                    "info": "Sumarai"
+                },
+                {
+                    "name": "Whole Cake",
+                    "info": "Anha"
+                },
+                {
+                    "name": "Dress",
+                    "info": "High Speed"
+                },
+                {
+                    "name": "Pinky",
+                    "info": "Scheme"
+                }
+            ]
+        },
+        "exhibitors": [{
+                "name": "Wano",
+                "company": "Sumarai"
+            },
+            {
+                "name": "Whole Cake",
+                "company": "Anha"
+            },
+            {
+                "name": "Dress",
+                "company": "High Speed"
+            },
+            {
+                "name": "Pinky",
+                "company": "Scheme"
+            }
+        ],
+        "speakers": [{
+                "name": "Ace San",
+                "company": "One Piece"
+            },
+            {
+                "name": "Buggy Sama",
+                "company": "New World"
+            },
+            {
+                "name": "Ben Beckman",
+                "company": "Red Haired"
+            }
+        ],
+        "schedule": [{
+                "time": "09:00 - 10:00",
+                "title": "Welcome Remarks",
+                "speakers": [{
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    },
+                    {
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    },
+                    {
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    }
+                ]
+            },
+            {
+                "time": "10:00 - 10:30",
+                "title": "Planning Phase",
+                "speakers": [{
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    },
+                    {
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    },
+                    {
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    }
+                ]
+            },
+            {
+                "time": "10:30 - 13:00",
+                "title": "Guests Speeches",
+                "speakers": [{
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    },
+                    {
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    },
+                    {
+                        "name": "Dext Omona",
+                        "info": "cool"
+                    }
+                ]
+            }
+        ],
+        "attendees": [{
+                "name": "Ace San",
+                "company": "One Piece"
+            },
+            {
+                "name": "Buggy Sama",
+                "company": "New World"
+            },
+            {
+                "name": "Ben Beckman",
+                "company": "Red Haired"
+            }
+        ],
+        "about": [{
+                "name": "Meeting Attire",
+                "info": "exex"
+            },
+            {
+                "name": "Mt Rubidoux Run",
+                "info": "exex"
+            },
+            {
+                "name": "Transportation & Travel",
+                "info": "exex"
+            },
+            {
+                "name": "Venue Information",
+                "info": "exex"
+            }
+        ],
+        "maps": [{
+                "name": "Meeting Attire",
+                "info": "exex"
+            },
+            {
+                "name": "Mt Rubidoux Run",
+                "info": "exex"
+            },
+            {
+                "name": "Transportation & Travel",
+                "info": "exex"
+            },
+            {
+                "name": "Venue Information",
+                "info": "exex"
+            }
+        ],
+        "social": [{
+            "facebook": "xx",
+            "twitter": "exex",
+            "linkedin": "exex"
+        }]
+    }
+}

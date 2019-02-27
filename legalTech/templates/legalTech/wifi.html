@@ -1,0 +1,7 @@
+
+<form action={% url 'legalTech:addwifi' %} method="post" enctype="multipart/form-data">
+{% csrf_token %}
+Username&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ wifi.val.username }}" name="username"><br><br>
+Password&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ wifi.val.password }}" name="password"><br><br>
+<input type="submit" value="change">
+</form>

@@ -1,0 +1,8 @@
+
+<form action={% url 'legalTech:addabout' %} method="post" enctype="multipart/form-data">
+{% csrf_token %}
+Attire&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ about.val.meetingattire }}" name="meetingattire"><br><br>
+Transport&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ about.val.transport }}" name="transport"><br><br>
+Venue&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ about.val.venue }}" name="venue"><br><br>
+<input type="submit" value="change">
+</form>

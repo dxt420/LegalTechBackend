@@ -1,0 +1,6 @@
+
+<form action={% url 'legalTech:addmap' %} method="post" enctype="multipart/form-data">
+{% csrf_token %}
+Company&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" value="{{ map.val.directions }}" name="directions"><br><br>
+<input type="submit" value="change">
+</form>

@@ -1,0 +1,61 @@
+{% load static %}
+{% csrf_token %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link rel="stylesheet" media="all" href={% static 'legalTech/style.scss' %} />
+
+
+<div class="table-users">
+
+   <h2>Exhibitors</h2>
+   <table cellspacing="0">
+      <tr>
+        <th >Icon</th>
+        <th >Name</th>
+        <th >Company</th>
+        <th>Description</th>
+        
+        
+      </tr>
+
+    
+
+{% for item in exhibitors.each %}
+<tr> 
+    <td><img width=100 src="{{ item.val.imageurl }}" /> </td>
+        <td>{{ item.val.name}}</td>
+        
+        <td>{{ item.val.company }}</td>
+        <td>{{ item.val.info }}</td>
+       
+    </tr>
+         {% endfor %}
+   </table>
+</div>
+
+
+
+
+<div class="table-users">
+
+
+<form action={% url 'legalTech:addexhibitor' %} method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h2>Add Exhibitor</h2>
+    Name    &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br><br>
+    Info&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="info"><br><br>
+    Company&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="company"><br><br>
+    
+
+    
+    <input type="file" name="pic" id="pic" accept="image/*"><br><br>
+    
+    <input type="submit" value="add">
+
+    
+
+
+</form>
+
+</div>
+
+
